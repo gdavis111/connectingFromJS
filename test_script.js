@@ -24,7 +24,7 @@ client.connect((err) => {
     console.log('Searching ... ')
     console.log('Found person(s) by the name', process.argv[2])
     let listCount = 1;
-    for(people of result) {
+    for(people of result) { // loop through returned array and print data for each object
       console.log('- ', listCount, ':', people.first_name, people.last_name, 'born', people.birthdate.toDateString());
       listCount ++;
     }
