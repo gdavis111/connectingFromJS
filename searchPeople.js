@@ -5,7 +5,7 @@ knex('famous_people').select('first_name', 'last_name', 'birthdate').where('firs
   if (err) {
     console.error(err)
     return
-    knex.destroy();
+    knex.destroy(); // is this working properly?
   }
   let listCount = 1;
   console.log('Searching ...');
